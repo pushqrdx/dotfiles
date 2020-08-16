@@ -160,8 +160,6 @@ augroup CustomGroup
   au InsertEnter * set norelativenumber
   au InsertLeave * set relativenumber
   au BufEnter    * set formatoptions-=cro
-  au BufWrite    * mkview
-  au BufRead     * silent! loadview
   au WinEnter    * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "vifmd" | bw! | q | endif
 augroup END
 
