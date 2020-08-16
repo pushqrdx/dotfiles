@@ -25,7 +25,7 @@ colorscheme cinnabar
 
 let mapleader = "\<Space>"              " Leader
 let &ls=0                               " Set to 2 to enable statusline (if 0 showcmd is enabled)
-let spaceline_seperate_style = 'arrow'
+let spaceline_seperate_style = 'none'   " Set to (arrow, curve) if you have nerd font
 
 " Settings {{{
 
