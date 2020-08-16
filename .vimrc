@@ -108,10 +108,10 @@ inoremap <C-a> <Home>
 inoremap <C-b> <C-Left>
 inoremap <C-e> <End>
 inoremap <C-f> <C-Right>
-inoremap <silent> <C-k> <C-r>=exutils#kill_line()<CR>
-inoremap <silent> <C-y> <C-r>"
+inoremap <C-k> <C-r>= exutils#kill_line(v:false)<CR>
+inoremap <C-y> <C-r>"
 
-cnoremap <C-k> <C-\>e strpart(getcmdline(), 0, getcmdpos() - 1)<CR>
+cnoremap <C-k> <C-\>e exutils#kill_line(v:true)<CR>
 cnoremap <C-y> <C-r>"
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
