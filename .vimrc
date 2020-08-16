@@ -17,52 +17,59 @@ call plug#begin()
   Plug 'vimoxide/vim-mkdir'
   Plug 'vimoxide/vim-quickscope'
   Plug 'vimoxide/vim-sherlock'
-  " Plug 'vimoxide/vim-spaceline'
+  Plug 'vimoxide/vim-spaceline'
   Plug 'vimoxide/vim-vifmd'
 call plug#end()
 
 colorscheme cinnabar
 
-let mapleader = "\<Space>"               " Leader
-let &ls=0                                " Set to 2 to enable statusline (if 0 showcmd is enabled)
-" let spaceline_seperate_style = 'none'  " Set to (arrow, curve) if you have nerd font
+let mapleader = "\<Space>"              " Leader
+let &ls = 2                             " Set to 0 to disable statusline (if 0, showmode is enabled)
+let spaceline_seperate_style = 'none'   " Set to (arrow, curve) if you have nerd font
 
 " Settings {{{
 
 " Enable Statusline
-if &ls != 0 | set noshowmode | endif
-if exists("&pumwidth") | set pumwidth=40 | endif
-set pumheight=20
-set nocp
-set hidden
-set termguicolors
-set showtabline=0
-set cmdheight=1
-set noshowcmd 
 set arabicshape!
 set backspace=indent,eol,start
+set cmdheight=1
 set complete-=i
-set nrformats-=octal
-set incsearch
-set smartcase
-set ignorecase
-set scrolloff=2
-set wildmenu
-set number relativenumber
-set nowrap
-set noswapfile
-set noruler
-set mouse=a
-set splitbelow splitright
-set virtualedit=block
-set selection=exclusive
 set fdm=marker
+set hidden
+set ignorecase
+set incsearch
+set mouse=a
+set nocp
+set noruler
+set noshowcmd 
+set noswapfile
+set nowrap
+set nrformats-=octal
+set number relativenumber
+set pumheight=20
+set scrolloff=2
+set selection=exclusive
+set showtabline=0
+set smartcase
+set splitbelow splitright
+set termguicolors
+set virtualedit=block
+set wildmenu
+
+if has('gui_running')
+  set guioptions=
+  set macligatures
+  set macmeta!
+endif
 
 if has('nvim')
   set inccommand=nosplit
 else
   au BufEnter * set tm=500 ttm=0
 endif
+
+if &ls == 2 | set nosmd | endif
+if exists("&pumwidth") | set pumwidth=40 | endif
 
 " }}}
 " Remaps {{{
@@ -164,4 +171,5 @@ augroup CustomGroup
 augroup END
 
 " }}}
+
 
