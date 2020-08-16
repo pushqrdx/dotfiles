@@ -115,7 +115,6 @@ cnoremap <C-k> <C-\>e strpart(getcmdline(), 0, getcmdpos() - 1)<CR>
 cnoremap <C-y> <C-r>"
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-cnoremap <C-k> <C-f>D<C-c><C-c>:<Up>
 
 " Easy paste above/below
 nnoremap <silent> <M-p> :put<CR>
