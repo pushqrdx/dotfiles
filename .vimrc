@@ -19,6 +19,7 @@ call plug#begin()
   Plug 'vimoxide/vim-sherlock'
   Plug 'vimoxide/vim-spaceline'
   Plug 'vimoxide/vim-vifmd'
+  Plug 'vimoxide/vim-buftabline'
 call plug#end()
 
 colorscheme cinnabar
