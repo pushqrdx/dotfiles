@@ -134,7 +134,7 @@ nnoremap <silent> <M-O> :call append(line('.')-1, '')<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" More text-objects 
+" More Range Selections
 for char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '-', '#' ]
   execute 'xnoremap i' . char . ' :<C-u>normal! T' . char . 'vt' . char . '<CR>'
   execute 'onoremap i' . char . ' :normal vi' . char . '<CR>'
