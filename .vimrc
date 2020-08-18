@@ -26,6 +26,7 @@ colorscheme cinnabar
 
 let mapleader = "\<Space>"              " Leader
 let &ls = 2                             " Set to 0 to disable statusline (if 0, showmode is enabled)
+let &stal = 1                           " Enable tab line (0 disabled, 1 if at least two tabs, 2 always)
 
 " Settings {{{
 
