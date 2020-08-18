@@ -19,14 +19,12 @@ call plug#begin()
   Plug 'vimoxide/vim-sherlock'
   Plug 'vimoxide/vim-spaceline'
   Plug 'vimoxide/vim-vifmd'
-  Plug 'vimoxide/vim-buftabline'
 call plug#end()
 
 colorscheme cinnabar
 
-let mapleader = "\<Space>"              " Leader
-let &ls = 2                             " Set to 0 to disable statusline (if 0, showmode is enabled)
-let &stal = 1                           " Enable tab line (0 disabled, 1 if at least two tabs, 2 always)
+let mapleader = "\<Space>"    " Leader
+let &ls       = 2             " Set to 0 to disable statusline (if 0, showmode is enabled)
 
 " Settings {{{
 
