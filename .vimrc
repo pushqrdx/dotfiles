@@ -74,11 +74,6 @@ if !isdirectory(&undodir) | call mkdir(&undodir, "p") | endif
 if !isdirectory(&backupdir) | call mkdir(&backupdir, "p") | endif
 if !isdirectory(&directory) | call mkdir(&directory, "p") | endif
 
-if has('nvim')
-  set inccommand=nosplit
-else
-  au BufEnter * set tm=500 ttm=0
-endif
 
 if &ls == 2 | set nosmd | endif
 if exists('&pumwidth') | set pumwidth=40 | endif
