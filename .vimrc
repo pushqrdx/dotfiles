@@ -55,12 +55,6 @@ set termguicolors
 set virtualedit=block
 set wildmenu
 
-if has('gui_running')
-  set guioptions=
-  set macligatures
-  set macmeta!
-endif
-
 if has('nvim')
   set inccommand=nosplit
 else
@@ -133,10 +127,6 @@ nnoremap <silent> <M-O> :call append(line('.')-1, '')<CR>
 " Easier Indentations
 vnoremap < <gv
 vnoremap > >gv
-
-" System Clipboard
-noremap <Leader>y "*y
-noremap <Leader>Y "+y
 
 " More text-objects 
 for char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '-', '#' ]
