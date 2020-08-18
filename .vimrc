@@ -67,6 +67,9 @@ if exists('&pumwidth') | set pumwidth=40 | endif
 " }}}
 " Remaps {{{
 
+" Y like D
+nnoremap Y y$
+
 " Folds
 nnoremap <Tab> za
 
