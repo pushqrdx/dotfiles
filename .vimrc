@@ -28,8 +28,7 @@ let &ls       = 2             " Set to 0 to disable statusline (if 0, showmode i
 
 " Settings {{{
 
-" Enable Statusline
-set nocp
+" Note that creating a vimrc file will cause the 'compatible' option to be off
 set arabicshape!
 set backspace=indent,eol,start
 set cmdheight=1
@@ -41,7 +40,6 @@ set incsearch
 set mouse=a
 set noruler
 set noshowcmd 
-set noswapfile
 set nowrap
 set nrformats-=octal
 set number relativenumber
@@ -54,6 +52,19 @@ set splitbelow splitright
 set termguicolors
 set virtualedit=block
 set wildmenu
+
+set swapfile
+let &directory = expand('~/.vim/swap//')
+
+set backup
+let &backupdir = expand('~/.vim/backup//')
+
+set undofile
+let &undodir = expand('~/.vim/undo//')
+
+if !isdirectory(&undodir) | call mkdir(&undodir, "p") | endif
+if !isdirectory(&backupdir) | call mkdir(&backupdir, "p") | endif
+if !isdirectory(&directory) | call mkdir(&directory, "p") | endif
 
 if has('nvim')
   set inccommand=nosplit
