@@ -23,8 +23,16 @@ call plug#end()
 
 colorscheme cinnabar
 
-let mapleader = "\<Space>"    " Leader
-let &ls       = 2             " Set to 0 to disable statusline (if 0, showmode is enabled)
+" Leader
+let mapleader  = "\<Space>"
+" Set to 0 to disable statusline (if 0, showmode is enabled)
+let &ls        = 2
+" Popup menu width
+let pumwidth   = 40
+" Popup menu height
+let pumheight  = 20
+" This is where backup, swap, and undo will be saved
+let vimrcdir   = fnamemodify(expand("$MYVIMRC"), ":h")
 
 " Settings {{{
 
