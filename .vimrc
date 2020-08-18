@@ -111,10 +111,13 @@ inoremap <C-a> <Home>
 inoremap <C-b> <C-Left>
 inoremap <C-e> <End>
 inoremap <C-f> <C-Right>
-inoremap <C-k> <C-r>= exutils#kill_line(v:false)<CR>
+inoremap <silent> <C-W> <C-\><C-O>db
+inoremap <silent> <C-U> <C-\><C-O>d0
+inoremap <silent> <C-k> <C-\><C-O>d$
 inoremap <C-y> <C-r>"
 
-cnoremap <C-k> <C-\>e exutils#kill_line(v:true)<CR>
+cnoremap <C-k> <C-\>e exutils#kill_cmd_line(v:false)<CR>
+cnoremap <C-u> <C-\>e exutils#kill_cmd_line(v:true)<CR>
 cnoremap <C-y> <C-r>"
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
