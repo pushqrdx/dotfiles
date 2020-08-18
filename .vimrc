@@ -29,6 +29,7 @@ let &ls = 2                             " Set to 0 to disable statusline (if 0, 
 " Settings {{{
 
 " Enable Statusline
+set nocp
 set arabicshape!
 set backspace=indent,eol,start
 set cmdheight=1
@@ -38,7 +39,6 @@ set hidden
 set ignorecase
 set incsearch
 set mouse=a
-set nocp
 set noruler
 set noshowcmd 
 set noswapfile
