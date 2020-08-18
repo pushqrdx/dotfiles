@@ -25,11 +25,12 @@ deviate from that.
 
 * My own *sensible* defaults
    * `<Space>` as leader
+   * `Y` Yanks from cursor to the end of the line, like normal mode `D`
    * Reduced timouts in vim
    * Automatic normal/insert modes relative line number switching
    * More Emacs keybindings in insert/command modes (`<C-k>`, `<C-e>`, `<C-a>`, `<C-u>`)
    * Disable auto insert comment
-   * `Y` Yanks from cursor to the end of the line, like normal mode `D`
+   * Backup, Swap, Undo enabled and saved into `.vim` folder next to `.vimrc` or `init.vim`
 * Leader
    * `p` Vifm as quick file opener/drawer
    * `bn`, `bp` Cycle through active buffers ignoring terminal and closed buffers
