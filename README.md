@@ -13,32 +13,38 @@ A minimalistic (almost) unopinionated configs for my terminal life
 > If you're using neovim copy `.vimrc` into your `init.vim`
 
 * Theme: [vim-cinnabar](https://github.com/vimoxide/vim-cinnabar) *
-* Config: [dotfiles](https://github.com/pushqrdx/dotfiles) *
+* Config: [.vimrc](https://github.com/pushqrdx/dotfiles/blob/master/.vimrc) *
+
+### Desclaimer
+
+You need to read and understand the changes i made because even though
+i try be as close to vanilla vim as possible, there's still changes that
+deviate from that.
 
 ### Features
 
 * My own *sensible* defaults
+   * `<Space>` as leader
    * Reduced timouts in vim
    * Automatic normal/insert modes relative line number switching
-   * `<Space>` as leader
-   * More Emacs keybindings in insert/command modes (`<C-k>`, `<C-e>`, `<C-a>`, etc)
-   * Disable auto insert comment (really annoying)
+   * More Emacs keybindings in insert/command modes (`<C-k>`, `<C-e>`, `<C-a>`, `<C-u>`)
+   * Disable auto insert comment
+   * `Y` Yanks from cursor to the end of the line, like normal mode `D`
 * Leader
    * `p` Vifm as quick file opener/drawer
-   * `bn`, `bp` Cycle through active buffers ignoring terminal and closed ones
-   * `y`, `Y` yank to system clipboard
+   * `bn`, `bp` Cycle through active buffers ignoring terminal and closed buffers
    * `v` quickly open your vimrc
 * `Tab` in normal mode, toggle folds
-* `Q` in normal mode, quickly repeat last macro (no thanks EX mode)
+* `Q` in normal mode, quickly repeat last macro 
 * `<C-Space>` for quick mark
 * Repeat last action on selected (visual) lines without losing selection
 * `<bar>` to quickly create a vertical split
 * Indent/De-dent in visual mode without losing selection
 * `<M-o>`. `<M-O>` insert line above/below without entering insert mode
 * `<M-p>`. `<M-P>` put above/below current line
-* More text objects without using external plugins `'_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '-', '#'`
-* `<C-s>` save (very addictive, alot easier than `:w<CR>`)
-* `<C-q>` quit (same)
+* More range selectors `'_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '-', '#'`
+* `<C-s>` save (easier than `:w<CR>`)
+* `<C-q>` quit
 * `<C-(h, j, k, l)>` instead of `<C-w>...`
 
 ### Curated plugins
@@ -48,11 +54,12 @@ A minimalistic (almost) unopinionated configs for my terminal life
 * Indentation textobject `vim-indent-object`
 * Complete words from buffer in `%s/` `vim-sherlock`
 * Easily use `f, F, t, T` with `vim-quickscope`
-* Lighweight [Statusline](https://github.com/pushqrdx/dotfiles/raw/master/screenshots/vim.png) with my fork of `vim-spaceline` (disabled by default)
-* quickly align stuff `vim-lion`
-* If a directory isn't there `vim-mkdir`
+* Lighweight [Statusline](https://github.com/pushqrdx/dotfiles/raw/master/screenshots/vim.png) with my fork of `vim-spaceline`
+* Quickly align stuff `vim-lion`
+* Create directories if non existent `vim-mkdir`
 
 ### Questions
+
 > Colors aren't as they're in the picture
 
 You will need `termguicolors` compatible terminal in order to have accurate colors. Or gui version (MacVim, gVim, etc)
