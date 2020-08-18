@@ -51,7 +51,6 @@ set noshowcmd
 set nowrap
 set nrformats-=octal
 set number relativenumber
-set pumheight=20
 set scrolloff=2
 set selection=exclusive
 set showtabline=0
@@ -60,23 +59,22 @@ set splitbelow splitright
 set termguicolors
 set virtualedit=block
 set wildmenu
-
-set swapfile
-let &directory = expand('~/.vim/swap//')
-
-set backup
-let &backupdir = expand('~/.vim/backup//')
-
-set undofile
-let &undodir = expand('~/.vim/undo//')
-
-if !isdirectory(&undodir) | call mkdir(&undodir, "p") | endif
-if !isdirectory(&backupdir) | call mkdir(&backupdir, "p") | endif
-if !isdirectory(&directory) | call mkdir(&directory, "p") | endif
-
+set tm=1000 ttm=50
+set swapfile backup undofile
 
 if &ls == 2 | set nosmd | endif
-if exists('&pumwidth') | set pumwidth=40 | endif
+if exists('&pumwidth') | let &pumwidth = pumwidth | endif
+if exists('&pumheight') | let &pumheight = pumheight | endif
+
+let &directory = vimrcdir."/.vim/swap//"
+let &backupdir = vimrcdir."/.vim/backup//"
+let &undodir = vimrcdir."/.vim/undo//"
+
+for directory in [&directory, &backupdir, &undodir]
+  if !isdirectory(directory)
+    call mkdir(directory, 'p')
+  endif
+endfor
 
 " }}}
 " Remaps {{{
