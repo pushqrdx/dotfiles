@@ -100,12 +100,10 @@ nnoremap <silent> <C-k> <C-w>k
 " Bind CTRL+S -> Save
 nnoremap <silent> <C-s> :w<cr>
 inoremap <silent> <C-s> <C-o><C-s>
-cnoremap <silent> <C-s> <C-\><C-c><C-s>
 
-" Bind CTRL+q -> Quit
-nnoremap <silent> <C-q> <C-w>q
+" Bind CTRL+q -> Buffer Delete
+nnoremap <silent> <C-q> :bd<CR>
 inoremap <silent> <C-q> <C-o><C-q>
-cnoremap <silent> <C-q> <C-\><C-c><C-q>
 
 " Emacs
 inoremap <C-a> <Home>
