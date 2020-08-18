@@ -62,7 +62,7 @@ else
 endif
 
 if &ls == 2 | set nosmd | endif
-if exists("&pumwidth") | set pumwidth=40 | endif
+if exists('&pumwidth') | set pumwidth=40 | endif
 
 " }}}
 " Remaps {{{
@@ -156,7 +156,7 @@ augroup CustomGroup
   au InsertEnter * set norelativenumber
   au InsertLeave * set relativenumber
   au BufEnter    * set formatoptions-=cro
-  au WinEnter    * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "vifmd" | bw! | q | endif
+  au WinEnter    * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), '&filetype') == 'vifmd' | bw! | q | endif
 augroup END
 
 " }}}
