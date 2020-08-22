@@ -35,7 +35,8 @@ deviate from that.
    * `p` Vifm as quick file opener/drawer
    * `bn`, `bp` Cycle through active buffers ignoring terminal and closed buffers
    * `v` quickly open your vimrc
-* `Tab` in normal mode, toggle folds
+   * `r` replace motion using `regreplop`. Example `<Leader>riw"`
+* `<Leader><Tab>` in normal mode, toggle folds
 * `Q` in normal mode, quickly repeat last macro 
 * `<C-Space>` for quick mark
 * Repeat last action on selected (visual) lines without losing selection
@@ -44,7 +45,7 @@ deviate from that.
 * `<M-o>`. `<M-O>` insert line above/below without entering insert mode
 * `<M-p>`. `<M-P>` put above/below current line
 * More range selectors `'_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '-', '#'`
-* `<C-s>` save (easier than `:w<CR>`)
+* `<C-s>` update (easier than `:w<CR>`)
 * `<C-q>` quit
 * `<C-(h, j, k, l)>` instead of `<C-w>...`
 
