@@ -37,10 +37,10 @@ augroup RelativeLineToggle
   autocmd!
   au InsertEnter * set norelativenumber
   au InsertLeave * set relativenumber
-  " Why? I don't know the option isn't set if i do that normally
   au BufEnter    * set formatoptions-=cro
 augroup END
 
+set shortmess+=c
 set backspace=indent,eol,start
 set cmdheight=1
 set fdm=marker
