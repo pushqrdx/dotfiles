@@ -132,8 +132,8 @@ nnoremap <silent> <Leader>O :call append(line('.')-1, '')<CR>
 nnoremap <C-{> <Plug>vem_prev_buffer-
 nnoremap <C-}> <Plug>vem_next_buffer-
 
-" Terminal
-nnoremap <silent> <Leader>b :VifmdToggle<CR>
+" Vifm Drawer
+nnoremap <silent> <Leader>d :VifmdToggle<CR>
 
 " Replace
 nmap <Leader>r  <Plug>ReplaceMotion
