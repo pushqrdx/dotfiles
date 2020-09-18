@@ -17,9 +17,9 @@ A minimalistic (almost) unopinionated configs for my terminal life
 
 ### Desclaimer
 
-You need to read and understand the changes i made because even though
-i try be as close to vanilla vim as possible, there's still changes that
-deviate from that.
+Even though i tried to be as close to vanilla vim as possible, there's still
+changes that deviate from that. You need to read and understand these before
+copy/pasting them.
 
 ### Features
 
@@ -32,47 +32,52 @@ deviate from that.
    * Disable auto insert comment
    * Backup, Swap, Undo enabled and saved into `.vim` folder next to `.vimrc` or `init.vim`
 * Leader
-   * `p` Vifm as quick file opener/drawer
-   * `bn`, `bp` Cycle through active buffers ignoring terminal and closed buffers
+   * `d` Vifm as quick file opener/drawer
    * `v` quickly open your vimrc
    * `r` replace motion using `regreplop`. Example `<Leader>riw"`
-* `<Leader><Tab>` in normal mode, toggle folds
+   * `<Tab>` in normal mode, toggle folds
 * `Q` in normal mode, quickly repeat last macro 
 * `<C-Space>` for quick mark
 * Repeat last action on selected (visual) lines without losing selection
 * `<bar>` to quickly create a vertical split
 * Indent/De-dent in visual mode without losing selection
-* `<M-o>`. `<M-O>` insert line above/below without entering insert mode
-* `<M-p>`. `<M-P>` put above/below current line
-* More range selectors `'_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', '-', '#'`
-* `<C-s>` update (easier than `:w<CR>`)
-* `<C-q>` quit
+* `<Leader>o`. `<Leader>O` insert line above/below without entering insert mode
+* `<Leader>p`. `<Leader>P` put above/below current line
+* More range selectors `'_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*',
+  '+', '%', '-', '#'`
+* `<C-s>` update (easier than `:up<CR>`)
+* `<C-q>` delete buffer
 * `<C-(h, j, k, l)>` instead of `<C-w>...`
 
-### Curated plugins
+### Plugins
 
 * Colorscheme `vim-cinnabar`
-* Indentation detection `vim-indent-detector`
+* Vifm Drawer `vim-vifmd`
 * Indentation textobject `vim-indent-object`
-* Complete words from buffer in `%s/` `vim-sherlock`
 * Easily use `f, F, t, T` with `vim-quickscope`
-* Lighweight [Statusline](https://github.com/pushqrdx/dotfiles/raw/master/screenshots/vim.png) with my fork of `vim-spaceline`
-* Quickly align stuff `vim-lion`
 * Create directories if non existent `vim-mkdir`
+* Vim Commentary `vim-commentary`
+* Tabs/Buffer Line `vem-tabline`
+* File Icons `vim-devicons`
 
 ### Questions
 
 > Colors aren't as they're in the picture
 
-You will need `termguicolors` compatible terminal in order to have accurate colors. Or gui version (MacVim, gVim, etc)
+You will need `termguicolors` compatible terminal in order to have accurate
+colors. Or gui version (MacVim, gVim, etc)
 
 > Why all the repos are cloned into vimoxide?
 
-I like to lock down updates and curate changes that suites my needs, mostly for stability, However all cloned repos should have names that are identical, and links that point, to the original
+I like to lock down updates and curate changes that suites my needs, mostly for
+stability, However all cloned repos should have names that are identical, and
+links that point, to the original
 
 > Is there a terminal color profiles?
 
-I'll be releasing iTerm, Alacritty and other terminal profiles with the color scheme if anyone is interested in them. If you like customizing your own terminal colors here's the palette:-
+I'll be releasing iTerm, Alacritty and other terminal profiles with the color
+scheme if anyone is interested in them. If you like customizing your own
+terminal colors here's the palette:-
 
 #### Normal Colors
 
