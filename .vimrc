@@ -16,14 +16,15 @@ call plug#begin()
   Plug 'vimoxide/vim-mkdir'
   Plug 'vimoxide/vim-quickscope'
   Plug 'vimoxide/vim-regreplop'
-  Plug 'vimoxide/vim-vem-tabline'
+  Plug 'vimoxide/vim-statusline'
+  Plug 'vimoxide/vim-tabline'
   Plug 'vimoxide/vim-vifmd'
 call plug#end()
 
 colorscheme cinnabar
 
 let mapleader  = "\<Space>"
-let &ls        = 0
+let &ls        = 2
 let pumwidth   = 40
 let pumheight  = 20
 let vimrcdir   = fnamemodify($MYVIMRC, ':p:h')
@@ -129,8 +130,8 @@ nnoremap <silent> <Leader>o :call append(line('.'), '')<CR>
 nnoremap <silent> <Leader>O :call append(line('.')-1, '')<CR>
 
 " Quick buffer cycling
-nnoremap <C-{> <Plug>vem_prev_buffer-
-nnoremap <C-}> <Plug>vem_next_buffer-
+nmap <C-{> <Plug>vem_prev_buffer-
+nmap <C-}> <Plug>vem_next_buffer-
 
 " Vifm Drawer
 nnoremap <silent> <Leader>d :VifmdToggle<CR>
