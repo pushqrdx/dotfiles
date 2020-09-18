@@ -51,7 +51,6 @@ set virtualedit=block
 set wildmenu
 set tm=1000 ttm=50
 set swapfile backup undofile
-set path+=.,**
 
 if &ls == 2 | set nosmd | endif
 if exists('&pumwidth')  | let &pumwidth = pumwidth   | endif
