@@ -36,6 +36,7 @@ copy/pasting them.
    * `v` quickly open your vimrc
    * `r` replace motion using `regreplop`. Example `<Leader>riw"`
    * `<Tab>` in normal mode, toggle folds
+   * `cd` change directory to current file
 * `Q` in normal mode, quickly repeat last macro 
 * `<C-Space>` for quick mark
 * Repeat last action on selected (visual) lines without losing selection
@@ -51,17 +52,16 @@ copy/pasting them.
 
 ### Plugins
 
-* Colorscheme `vim-cinnabar`
-* Vifm Drawer `vim-vifmd`
+* Colorscheme [`vim-cinnabar`](https://github.com/vimoxide/vim-cinnabar)
+* Vifm Drawer [`vim-vifmd`](https://github.com/vimoxide/vim-vifmd)
 * Minimal Tab/Status Lines
   [`vem-tabline`](https://github.com/pacha/vem-tabline)
   [`vem-statusline`](https://github.com/pacha/vem-statusline)
-* Indentation textobject `vim-indent-object`
-* Easily use `f, F, t, T` with `vim-quickscope`
-* Create directories if non existent `vim-mkdir`
-* Vim Commentary `vim-commentary`
-* Tabs/Buffer Line `vem-tabline`
-* File Icons `vim-devicons`
+* Indentation textobject [`vim-indent-object`](https://github.com/vimoxide/vim-indent-object)
+* Easily use `f, F, t, T` with [`vim-quickscope`](https://github.com/vimoxide/vim-quickscope)
+* Create directories if non existent [`vim-mkdir`](https://github.com/vimoxide/vim-mkdir)
+* Vim Commentary [`vim-commentary`](https://github.com/vimoxide/vim-commentary)
+* File Icons [`vim-devicons`](https://github.com/vimoxide/vim-devicons)
 
 ### Questions
 
