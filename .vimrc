@@ -12,22 +12,18 @@ call plug#begin()
   Plug 'vimoxide/vim-commentary'
   Plug 'vimoxide/vim-devicons'
   Plug 'vimoxide/vim-extra-utils'
-  Plug 'vimoxide/vim-sleuth'
   Plug 'vimoxide/vim-indent-object'
-  Plug 'vimoxide/vim-lion'
   Plug 'vimoxide/vim-mkdir'
   Plug 'vimoxide/vim-quickscope'
-  Plug 'vimoxide/vim-repeat'
-  Plug 'vimoxide/vim-sherlock'
-  Plug 'vimoxide/vim-spaceline'
-  Plug 'vimoxide/vim-vifmd'
   Plug 'vimoxide/vim-regreplop'
+  Plug 'vimoxide/vim-vem-tabline'
+  Plug 'vimoxide/vim-vifmd'
 call plug#end()
 
 colorscheme cinnabar
 
 let mapleader  = "\<Space>"
-let &ls        = 2
+let &ls        = 0
 let pumwidth   = 40
 let pumheight  = 20
 let vimrcdir   = fnamemodify($MYVIMRC, ':p:h')
