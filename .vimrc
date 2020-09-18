@@ -129,8 +129,8 @@ nnoremap <silent> <Leader>o :call append(line('.'), '')<CR>
 nnoremap <silent> <Leader>O :call append(line('.')-1, '')<CR>
 
 " Quick buffer cycling
-nnoremap <silent> <Leader>bn :call exutils#next_buffer()<CR>
-nnoremap <silent> <Leader>bp :call exutils#previous_buffer()<CR>
+nnoremap <C-{> <Plug>vem_prev_buffer-
+nnoremap <C-}> <Plug>vem_next_buffer-
 
 " Terminal
 nnoremap <silent> <Leader>b :VifmdToggle<CR>
