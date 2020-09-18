@@ -73,9 +73,11 @@ nnoremap <Leader>v :e $MYVIMRC<CR>
 
 " Random
 nnoremap Y y$
+nnoremap <silent> <Leader>cd :cd %:p:h<CR>
 nnoremap <Leader><Tab> za
 nnoremap <C-Space> m'
 nnoremap Q @@
+nnoremap <silent> <Leader> :noh<CR>
 
 " Visual Mode
 vnoremap < <gv
@@ -90,7 +92,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 
 " Save
-nnoremap <silent> <C-s> :up<cr>
+nnoremap <silent> <C-s> :up<CR>
 imap <C-s> <C-o><C-s>
 
 " Delete buffer
@@ -104,10 +106,8 @@ inoremap <C-W> <C-\><C-O>db
 inoremap <C-U> <C-\><C-O>d0
 inoremap <C-k> <C-\><C-O>d$
 inoremap <C-y> <C-r>"
-
-" Kill backwards/forwards in command mode and save to "
-cnoremap <silent> <C-k> <C-\>e exutils#kill_cmd_line(v:false)<CR>
-cnoremap <silent> <C-u> <C-\>e exutils#kill_cmd_line(v:true)<CR>
+cnoremap <C-k> <C-\>e exutils#kill_cmd_line(v:false)<CR>
+cnoremap <C-u> <C-\>e exutils#kill_cmd_line(v:true)<CR>
 cnoremap <C-y> <C-r>"
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -121,24 +121,19 @@ for char in [ '_', '.', ':', ',', ';', '<bar>', '/', '<bslash>', '*', '+', '%', 
 endfor
 
 " Put
-nnoremap <silent> <M-p> :put<CR>
-nnoremap <silent> <M-P> :put!<CR>
+nnoremap <silent> <Leader>p :put<CR>
+nnoremap <silent> <Leader>P :put!<CR>
 
-" Put (Don't move cursor)
-nnoremap <silent> <M-o> :call append(line('.'), '')<CR>
-nnoremap <silent> <M-O> :call append(line('.')-1, '')<CR>
-
-" Sherlock
-cnoremap <C-p> <C-\>e sherlock#completeBackward()<CR>
-cnoremap <C-n> <C-\>e sherlock#completeForward()<CR>
+" Put Empty Line
+nnoremap <silent> <Leader>o :call append(line('.'), '')<CR>
+nnoremap <silent> <Leader>O :call append(line('.')-1, '')<CR>
 
 " Quick buffer cycling
 nnoremap <silent> <Leader>bn :call exutils#next_buffer()<CR>
 nnoremap <silent> <Leader>bp :call exutils#previous_buffer()<CR>
 
 " Terminal
-tnoremap <silent> <ESC><ESC> <C-\><C-N><C-w><C-w>
-nnoremap <silent> <Leader>p :VifmdToggle<CR>
+nnoremap <silent> <Leader>b :VifmdToggle<CR>
 
 " Replace
 nmap <Leader>r  <Plug>ReplaceMotion
@@ -146,4 +141,3 @@ nmap <Leader>rl <Plug>ReplaceLine
 vmap <Leader>r  <Plug>ReplaceVisual
 
 " }}}
-
