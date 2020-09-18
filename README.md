@@ -53,6 +53,9 @@ copy/pasting them.
 
 * Colorscheme `vim-cinnabar`
 * Vifm Drawer `vim-vifmd`
+* Minimal Tab/Status Lines
+  [`vem-tabline`](https://github.com/pacha/vem-tabline)
+  [`vem-statusline`](https://github.com/pacha/vem-statusline)
 * Indentation textobject `vim-indent-object`
 * Easily use `f, F, t, T` with `vim-quickscope`
 * Create directories if non existent `vim-mkdir`
